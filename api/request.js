@@ -231,8 +231,12 @@ module.exports = async (req, res) => {
       text,
       html
     });
-  } catch {
-    console.error('Gmail SMTP could not send a portfolio request.');
+  } catch (error) {
+    console.error('Gmail SMTP could not send a portfolio request.', {
+      code: error.code,
+      responseCode: error.responseCode,
+      command: error.command
+    });
     return respond(res, 502, { error: 'The request could not be emailed. Please try again later.' });
   }
 

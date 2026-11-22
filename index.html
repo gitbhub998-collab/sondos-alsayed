@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Sondos Alsayed Mahmoud — Railway Engineering Technology Student</title>
-<meta name="description" content="Sondos Alsayed Mahmoud is a Railway Engineering Technology student at 6th of October Technological University, seeking an internship in railway systems.">
+<title>Sondos Alsayed Mahmoud — Railway Engineering Technology</title>
+<meta name="description" content="Sondos Alsayed Mahmoud is a Railway Engineering Technology student at 6th of October Technological University, with training at Alstom, RATP Dev, Cairo Metro and Siemens.">
 <link rel="icon" type="image/avif" href="/assets/logo.avif">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=55">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter+Tight:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=1">
 </head>
 <body>
 <div class="site-background" aria-hidden="true">
@@ -33,52 +33,39 @@
 </div>
 
 <header class="topbar">
-  <a class="brand" href="#home" aria-label="Sondos Alsayed Mahmoud home">
+  <a class="brand" href="#home" data-i18n-aria="brand.home" aria-label="Sondos Alsayed Mahmoud home">
     <img class="brand-logo" src="/assets/logo.avif" alt="">
-    <span class="brand-word">SONDOS<br>ALSAYED MAHMOUD</span>
+    <span class="brand-word" data-i18n-html="brand.word">SONDOS<br>ALSAYED MAHMOUD</span>
   </a>
-  <nav class="desktop-nav" aria-label="Primary navigation">
-    <a href="#about">PROFILE</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#work">TRAINING</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
-  <button type="button" class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-controls="menuPanel" aria-expanded="false">
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
-  </button>
+  <div class="top-meta"><strong data-i18n="top.role">RAILWAY ENGINEERING TECH</strong><strong>2026</strong></div>
+  <div class="top-actions">
+    <button type="button" class="lang-toggle" id="langToggle" data-i18n-aria="lang.switch" aria-label="Switch to Arabic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.4" stroke="currentColor" stroke-width="1.5"/><path d="M3.6 12h16.8M12 3.6c2.5 2.3 3.8 5.2 3.8 8.4s-1.3 6.1-3.8 8.4c-2.5-2.3-3.8-5.2-3.8-8.4S9.5 5.9 12 3.6Z" stroke="currentColor" stroke-width="1.5"/></svg><span class="lt-label">عربي</span></button>
+    <button type="button" class="menu-button" id="menuButton" data-i18n-aria="menu.open" aria-label="Open navigation menu" aria-controls="menuPanel" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+    </button>
+  </div>
+
+
 </header>
 
 <aside class="menu-panel" id="menuPanel" aria-hidden="true" inert>
-  <button class="menu-backdrop" type="button" tabindex="-1" aria-label="Close navigation menu"></button>
+  <button class="menu-backdrop" type="button" tabindex="-1" data-i18n-aria="menu.closeAria" aria-label="Close navigation menu"></button>
   <div class="menu-panel-content">
-  <div class="menu-panel-top"><span>SM / NAVIGATION</span><button type="button" class="close-menu" id="closeMenu" aria-label="Close navigation menu">CLOSE <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></button></div>
+  <div class="menu-panel-top"><span data-i18n="menu.tag">SM / NAVIGATION</span><button type="button" class="close-menu" id="closeMenu" data-i18n-aria="menu.closeAria" aria-label="Close navigation menu"><span data-i18n="menu.close">CLOSE</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></button></div>
   <nav>
-    <a href="#home" data-close><em>01</em><span>HOME</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#services" data-close><em>02</em><span>EXPERTISE</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#about" data-close><em>03</em><span>ABOUT</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#experience" data-close><em>04</em><span>EXPERIENCE</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#skills" data-close><em>05</em><span>SKILLS</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#projects" data-close><em>06</em><span>PROJECTS</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#work" data-close><em>07</em><span>TRAINING</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#journey" data-close><em>08</em><span>EDUCATION</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-    <a href="#contact" data-close><em>09</em><span>CONTACT</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#home" data-close><em>01</em><span data-i18n="nav.home">HOME</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#services" data-close><em>02</em><span data-i18n="nav.services">EXPERTISE</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#about" data-close><em>03</em><span data-i18n="nav.about">ABOUT</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#experience" data-close><em>04</em><span data-i18n="nav.experience">EXPERIENCE</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#skills" data-close><em>05</em><span data-i18n="nav.skills">SKILLS</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#projects" data-close><em>06</em><span data-i18n="nav.projects">PROJECTS</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#work" data-close><em>07</em><span data-i18n="nav.work">TRAINING</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#journey" data-close><em>08</em><span data-i18n="nav.education">EDUCATION</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#contact" data-close><em>09</em><span data-i18n="nav.contact">CONTACT</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
   </nav>
   <div class="menu-bottom">
-    <div>
-      <span>EMAIL</span>
-      <a href="mailto:sondos02sayed@gmail.com">
-        <span class="menu-link-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="1" stroke="currentColor" stroke-width="1.5"></rect><path d="M3.5 5l8.5 6.5L20.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-        <span class="menu-link-label">sondos02sayed@gmail.com</span>
-      </a>
-    </div>
-    <div>
-      <span>SOCIAL</span>
-      <a href="https://linkedin.com/in/sondos-al-sayed-567a72341" target="_blank" rel="noopener noreferrer">
-        <span class="menu-link-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.2 8.2H2.4V21h2.8V8.2ZM3.8 2.1a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM21.6 13.7c0-3.9-2.1-5.8-4.9-5.8-2.3 0-3.3 1.3-3.9 2.1V8.2H10V21h2.8v-6.3c0-1.7.3-3.4 2.5-3.4s2.3 2 2.3 3.5V21h2.8l1.2-7.3Z"></path></svg></span>
-        <span class="menu-link-label">LINKEDIN</span>
-        <svg class="menu-link-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      </a>
-    </div>
+    <div><span data-i18n="menu.email">EMAIL</span><a href="mailto:sondos02sayed@gmail.com" dir="ltr">sondos02sayed@gmail.com</a></div>
+    <div><span data-i18n="menu.social">SOCIAL</span><a href="https://linkedin.com/in/sondos-al-sayed-567a72341" target="_blank" rel="noopener noreferrer"><span data-i18n="menu.linkedin">LINKEDIN</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div>
   </div>
   </div>
 </aside>
@@ -86,153 +73,162 @@
 <main>
 <section id="home" class="hero page-section">
   <div class="hero-copy reveal">
-    <p class="eyebrow">RAILWAY ENGINEERING TECHNOLOGY / 2026</p>
-    <h1><span>SONDOS</span><span>ALSAYED MAHMOUD</span></h1>
+    <p class="eyebrow" data-i18n="hero.eyebrow">RAILWAY ENGINEERING TECHNOLOGY / 2026</p>
+    <h1><span data-i18n="hero.name1">SONDOS</span><span data-i18n="hero.name2">ALSAYED MAHMOUD</span></h1>
     <div class="hero-rule"></div>
-    <p class="hero-sub">Passionate about railway engineering, modern transportation technologies, and developing practical expertise in railway systems, maintenance, and signaling.</p>
+    <p class="hero-sub" data-i18n="hero.sub">Passionate about railway engineering, modern transportation technologies, and developing practical expertise in railway systems, maintenance, and signaling.</p>
   </div>
-  <div class="hero-side-note">CAIRO, EGYPT<br>OPEN TO WORK & TRAINING</div>
-  <a class="scroll-cue" href="#services"><span class="scroll-line"></span>SCROLL TO EXPLORE</a>
+  <div class="hero-side-note" data-i18n-html="hero.note">CAIRO, EGYPT<br>OPEN TO WORK &amp; TRAINING</div>
+  <a class="scroll-cue" href="#services"><span class="scroll-line"></span><span data-i18n="hero.scroll">SCROLL TO EXPLORE</span></a>
 </section>
 
 <section id="services" class="services section light-section">
-  <div class="section-head reveal"><span class="section-index">02 / 09</span><span class="section-kicker">AREAS OF INTEREST</span></div>
-  <h2 class="display-title reveal">EXPERTISE</h2>
-  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>RAILWAY SYSTEMS — ELECTRICAL ENGINEERING — MECHANICAL ENGINEERING — ROLLING STOCK — TRACK MAINTENANCE —</span><span>RAILWAY SYSTEMS — ELECTRICAL ENGINEERING — MECHANICAL ENGINEERING — ROLLING STOCK — TRACK MAINTENANCE —</span></div></div>
-  <div class="service-intro reveal"><strong>RAILWAY ENGINEERING,</strong><span>BUILDING PRACTICAL EXPERIENCE IN RAILWAY SYSTEMS AND THEIR ELECTRICAL AND MECHANICAL ENGINEERING.</span></div>
+  <div class="section-head reveal"><span class="section-index">02 / 09</span><span class="section-kicker" data-i18n="services.kicker">AREAS OF INTEREST</span></div>
+  <h2 class="display-title reveal" data-i18n="services.title">EXPERTISE</h2>
+  <div class="marquee" aria-hidden="true" dir="ltr"><div class="marquee-track marquee-track-mix" data-i18n-html="services.marquee">RAILWAY SYSTEMS — ELECTRICAL ENGINEERING — MECHANICAL ENGINEERING — ROLLING STOCK — TRACK MAINTENANCE — RAILWAY SYSTEMS — ELECTRICAL ENGINEERING — MECHANICAL ENGINEERING — ROLLING STOCK — TRACK MAINTENANCE — </div></div>
+  <div class="service-intro reveal"><strong data-i18n="services.intro1">RAILWAY ENGINEERING,</strong><span data-i18n="services.intro2">BUILDING PRACTICAL EXPERIENCE IN RAILWAY SYSTEMS AND THEIR ELECTRICAL AND MECHANICAL ENGINEERING.</span></div>
   <div class="service-list">
     <article class="service-item reveal">
-      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-1"><span>01</span><h3>Railway Systems</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
-      <div class="service-body" id="service-body-1" aria-hidden="true">Interested in railway engineering, modern railway systems and gaining practical experience across rail operations.</div>
+      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-1"><span>01</span><h3 data-i18n="services.s1">Railway Systems</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
+      <div class="service-body" id="service-body-1" aria-hidden="true"><div class="service-body-inner" data-i18n="services.s1b">Interested in railway engineering, modern railway systems and gaining practical experience across rail operations.</div></div>
     </article>
     <article class="service-item reveal">
-      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-2"><span>02</span><h3>Electrical &amp; Mechanical Engineering</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
-      <div class="service-body" id="service-body-2" aria-hidden="true">Interested in applying electrical and mechanical engineering principles to railway technology and maintenance.</div>
+      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-2"><span>02</span><h3 data-i18n="services.s2">Electrical &amp; Mechanical Engineering</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
+      <div class="service-body" id="service-body-2" aria-hidden="true"><div class="service-body-inner" data-i18n="services.s2b">Interested in applying electrical and mechanical engineering principles to railway technology and maintenance.</div></div>
     </article>
     <article class="service-item reveal">
-      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-3"><span>03</span><h3>Track &amp; Maintenance</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
-      <div class="service-body" id="service-body-3" aria-hidden="true">Interested in railway track fundamentals and maintenance, supported by a 50-hour theoretical and practical training program.</div>
+      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-3"><span>03</span><h3 data-i18n="services.s3">Track &amp; Maintenance</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
+      <div class="service-body" id="service-body-3" aria-hidden="true"><div class="service-body-inner" data-i18n="services.s3b">Interested in railway track fundamentals and maintenance, supported by a 50-hour theoretical and practical training program.</div></div>
     </article>
     <article class="service-item reveal">
-      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-4"><span>04</span><h3>Modern Rail &amp; Signaling</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
-      <div class="service-body" id="service-body-4" aria-hidden="true">Exploring modern railway systems, signaling concepts, ATS fundamentals and driverless monorail technology.</div>
+      <button type="button" class="service-head" aria-expanded="false" aria-controls="service-body-4"><span>04</span><h3 data-i18n="services.s4">Modern Rail &amp; Signaling</h3><b><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></b></button>
+      <div class="service-body" id="service-body-4" aria-hidden="true"><div class="service-body-inner" data-i18n="services.s4b">Exploring modern railway systems, signaling concepts, ATS fundamentals and driverless monorail technology.</div></div>
     </article>
   </div>
 </section>
 
 <section id="about" class="about section dark-section">
-  <div class="section-head reveal"><span class="section-index">03 / 09</span><span class="section-kicker">PROFILE</span></div>
-  <h2 class="display-title reveal">ABOUT</h2>
+  <div class="section-head reveal"><span class="section-index">03 / 09</span><span class="section-kicker" data-i18n="about.kicker">PROFILE</span></div>
+  <h2 class="display-title reveal" data-i18n="about.title">ABOUT</h2>
   <div class="about-card reveal">
     <div class="about-text">
-      <p class="about-lead"><span>I am Sondos Alsayed Mahmoud, a Fourthy-year Railway Engineering Technology student at 6th of October Technological University.</span></p>
-      <p><span>I am seeking an internship to gain practical experience in railway systems, with a particular interest in electrical and mechanical engineering. My training includes railway track fundamentals, metro maintenance, rolling stock, high-speed rail and modern signaling.</span></p>
-      <p><span>I also bring manufacturing experience, long-term Microsoft Excel support experience and a strong foundation in teamwork, problem solving and communication.</span></p>
+      <p class="about-lead"><span data-i18n="about.lead">I am Sondos Alsayed Mahmoud, a fourth-year Railway Engineering Technology student at 6th of October Technological University.</span></p>
+      <p><span data-i18n="about.p2">I am seeking an internship to gain practical experience in railway systems, with a particular interest in electrical and mechanical engineering. My training includes railway track fundamentals, metro maintenance, rolling stock, high-speed rail and modern signaling.</span></p>
+      <p><span data-i18n="about.p3">I also bring long-term Microsoft Excel support experience and a strong foundation in teamwork, problem solving and communication.</span></p>
       <div class="about-facts">
-        <div><span>EDUCATION</span><b>RAILWAY ENGINEERING TECHNOLOGY</b></div>
-        <div><span>LANGUAGES</span><b>ARABIC (NATIVE) / ENGLISH (INTERMEDIATE)</b></div>
-        <div><span>LOCATION</span><b>CAIRO, EGYPT</b></div>
+        <div><span data-i18n="about.f1k">EDUCATION</span><b data-i18n="about.f1v">RAILWAY ENGINEERING TECHNOLOGY</b></div>
+        <div><span data-i18n="about.f2k">LANGUAGES</span><b data-i18n="about.f2v">ARABIC (NATIVE) / ENGLISH (INTERMEDIATE)</b></div>
+        <div><span data-i18n="about.f3k">LOCATION</span><b data-i18n="about.f3v">CAIRO, EGYPT</b></div>
       </div>
     </div>
   </div>
+  <div class="skills reveal">
+      <h3 class="skills-title" data-i18n="matrix.title">TECHNICAL SKILLS</h3>
+      <div class="skills-grid">
+        <div class="skill"><span class="skill-num">01</span><span data-i18n="matrix.m1">Microsoft Excel</span></div>
+        <div class="skill"><span class="skill-num">02</span><span data-i18n="matrix.m2">Railway Systems</span></div>
+        <div class="skill"><span class="skill-num">03</span><span data-i18n="matrix.m3">Track &amp; Maintenance</span></div>
+        <div class="skill"><span class="skill-num">04</span><span data-i18n="matrix.m4">Signaling &amp; Modern Rail</span></div>
+        <div class="skill"><span class="skill-num">05</span><span data-i18n="matrix.m5">Rolling Stock</span></div>
+        <div class="skill"><span class="skill-num">06</span><span data-i18n="matrix.m6">Electrical Systems</span></div>
+      </div>
+    </div>
 </section>
 
 <section id="experience" class="experience section light-section">
-  <div class="section-head reveal"><span class="section-index">04 / 09</span><span class="section-kicker">EXPERIENCE &amp; COURSES</span></div>
-  <h2 class="display-title reveal">EXPERIENCE</h2>
-  <div class="journey-list experience-list">
-    <article class="reveal"><span>APPROX. 3 YEARS</span><div><h3>Microsoft Excel Support</h3><p>Physics education content for Mr. Mahmoud Magdy · Organizing, formatting and managing educational content and data.</p></div></article>
-    <article class="reveal"><span>INDUSTRIAL EXPERIENCE</span><div><h3>Manufacturing Experience</h3><p>Hands-on experience with production processes and manual operations in an industrial factory.</p></div></article>
-    <article class="reveal"><span>IN PROGRESS</span><div><h3>English Language Course</h3><p>Russian Cultural Center.</p></div></article>
+  <div class="section-head reveal"><span class="section-index">04 / 09</span><span class="section-kicker" data-i18n="exp.kicker">EXPERIENCE &amp; COURSES</span></div>
+  <h2 class="display-title reveal" data-i18n="exp.title">EXPERIENCE</h2>
+  <div class="journey-list">
+    <article class="reveal"><span data-i18n="exp.e1d0">APPROX. 3 YEARS</span><div><h3 data-i18n="exp.e1t">Microsoft Excel Support</h3><p data-i18n="exp.e1d">Physics education content for Mr. Mahmoud Magdy · Organizing, formatting and managing educational content and data.</p></div></article>
+    <article class="reveal"><span data-i18n="exp.e3d0">IN PROGRESS</span><div><h3 data-i18n="exp.e3t">English Language Course</h3><p data-i18n="exp.e3d">Russian Cultural Center.</p></div></article>
   </div>
 </section>
 
 <section id="skills" class="skills section light-section">
-  <div class="section-head reveal"><span class="section-index">05 / 09</span><span class="section-kicker">SKILLS</span></div>
-  <h2 class="display-title reveal">SKILLS &amp; LANGUAGES</h2>
+  <div class="section-head reveal"><span class="section-index">05 / 09</span><span class="section-kicker" data-i18n="skills.kicker">SKILLS</span></div>
+  <h2 class="display-title reveal" data-i18n="skills.title">SKILLS &amp; LANGUAGES</h2>
   <div class="skills-list">
-    <div class="skill-row reveal"><span>01</span><strong>Teamwork</strong><small>Collaborative and dependable</small></div>
-    <div class="skill-row reveal"><span>02</span><strong>Problem Solving</strong><small>Analytical thinking</small></div>
-    <div class="skill-row reveal"><span>03</span><strong>Fast Learning</strong><small>Adaptable and eager to learn</small></div>
-    <div class="skill-row reveal"><span>04</span><strong>Microsoft Office</strong><small>Word · Excel · PowerPoint</small></div>
-    <div class="skill-row reveal"><span>05</span><strong>Engineering Systems Understanding</strong><small>Railway engineering systems</small></div>
-    <div class="skill-row reveal"><span>06</span><strong>Electrical Systems</strong><small>Basic electrical systems understanding</small></div>
-    <div class="skill-row reveal"><span>07</span><strong>Communication</strong><small>Good communication skills</small></div>
-    <div class="skill-row reveal"><span>08</span><strong>Languages</strong><small>Arabic · Native / English · Intermediate</small></div>
+    <div class="skill-row reveal"><span>01</span><strong data-i18n="skills.r1t">Teamwork</strong><small data-i18n="skills.r1d">Collaborative and dependable</small></div>
+    <div class="skill-row reveal"><span>02</span><strong data-i18n="skills.r2t">Problem Solving</strong><small data-i18n="skills.r2d">Analytical thinking</small></div>
+    <div class="skill-row reveal"><span>03</span><strong data-i18n="skills.r3t">Fast Learning</strong><small data-i18n="skills.r3d">Adaptable and eager to learn</small></div>
+    <div class="skill-row reveal"><span>04</span><strong data-i18n="skills.r4t">Microsoft Office</strong><small data-i18n="skills.r4d">Word · Excel · PowerPoint</small></div>
+    <div class="skill-row reveal"><span>05</span><strong data-i18n="skills.r5t">Engineering Systems Understanding</strong><small data-i18n="skills.r5d">Railway engineering systems</small></div>
+    <div class="skill-row reveal"><span>06</span><strong data-i18n="skills.r6t">Electrical Systems</strong><small data-i18n="skills.r6d">Basic electrical systems understanding</small></div>
+    <div class="skill-row reveal"><span>07</span><strong data-i18n="skills.r7t">Communication</strong><small data-i18n="skills.r7d">Good communication skills</small></div>
+    <div class="skill-row reveal"><span>08</span><strong data-i18n="skills.r8t">Languages</strong><small data-i18n="skills.r8d">Arabic · Native / English · Intermediate</small></div>
   </div>
 </section>
 
-<section id="projects" class="projects section light-section">
-  <div class="section-head reveal"><span class="section-index">06 / 09</span><span class="section-kicker">SELECTED ENGINEERING WORK</span></div>
-  <h2 class="display-title reveal">PROJECTS</h2>
-  <div class="project-showcase">
-    <div class="project-category">
-      <h3 class="project-category-title reveal">ENGINEERING PROJECTS</h3>
-      <div class="project-list">
-        <a class="project-item reveal" href="#projectPreview" data-image="/assets/projects/Fire-Alarm-System.avif" aria-label="Preview Fire Alarm System">
-          <span class="project-item-number">01</span>
-          <span class="project-item-copy"><strong>Fire Alarm System</strong><small>ELECTRICAL SYSTEMS</small><span>Design of a fire alarm simulation board connecting sensors and emergency points to a control panel to trigger audio and visual alerts.</span></span>
-          <span class="project-item-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-        </a>
-        <a class="project-item reveal" href="#projectPreview" data-image="/assets/projects/Project1-switcher-locomotive.avif" aria-label="Preview Switcher Locomotive">
-          <span class="project-item-number">02</span>
-          <span class="project-item-copy"><strong>Switcher Locomotive</strong><small>RAILWAY ENGINEERING</small><span>Design and development of an engineering model for a railway switcher locomotive, integrating mechanical traction and control systems for yard maneuvering operations</span></span>
-          <span class="project-item-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-        </a>
-        <a class="project-item reveal" href="#projectPreview" data-image="/assets/projects/Smart-Solar-Car.avif" aria-label="Preview Smart Solar Car">
-          <span class="project-item-number">03</span>
-          <span class="project-item-copy"><strong>Smart Solar Car</strong><small>RENEWABLE ENERGY</small><span>Design and development of a smart solar-powered vehicle prototype, integrating photovoltaic energy harvesting with electric propulsion and smart control systems.</span></span>
-          <span class="project-item-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-        </a>
-        <a class="project-item reveal" href="#projectPreview" data-image="/assets/projects/project2-penumatic-brake-system.avif" aria-label="Preview Pneumatic Brake System">
-          <span class="project-item-number">04</span>
-          <span class="project-item-copy"><strong>Pneumatic Brake System</strong><small>RAILWAY SYSTEMS</small><span>Design and implementation of an experimental prototype for a railway pneumatic braking system, demonstrating compressed air actuation and mechanical linkage mechanics for train</span></span>
-          <span class="project-item-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-        </a>
-      </div>
-    </div>
-    <div class="work-preview project-preview" id="projectPreview" aria-label="Selected project preview">
-      <div class="preview-placeholder" id="projectPreviewPlaceholder">SELECT A<br>PROJECT</div>
-      <img id="projectPreviewImage" alt="" decoding="async" aria-hidden="true">
-    </div>
-  </div>
-</section>
-
-<section id="work" class="work section light-section">
-  <div class="section-head reveal"><span class="section-index">07 / 09</span><span class="section-kicker">TRAINING &amp; INTERNSHIPS</span></div>
-  <h2 class="display-title reveal">TRAINING</h2>
+<section id="projects" class="work section light-section">
+  <div class="section-head reveal"><span class="section-index">06 / 09</span><span class="section-kicker" data-i18n="work.kicker">SELECTED ENGINEERING WORK</span></div>
+  <h2 class="display-title reveal" data-i18n="work.title">PROJECTS</h2>
   <div class="work-layout">
     <div class="work-list">
-      <div class="work-row reveal"><span class="number">01</span><div><h3>Alstom &amp; Egyptian National Institute of Transport</h3><small>07/2026 · Modern railway systems, signaling, ATS fundamentals and driverless monorail.</small></div></div>
-      <div class="work-row reveal"><span class="number">02</span><div><h3>RATP Dev Mobility Cairo</h3><small>TRACK FUNDAMENTALS · 50-hour theoretical and practical training in track fundamentals and maintenance.</small></div></div>
-      <div class="work-row reveal"><span class="number">03</span><div><h3>Egyptian Company for Metro</h3><small>05/2026 · Cairo Metro Line 2 field training in rolling stock overhauls, maintenance and simulation workflows.</small></div></div>
-      <div class="work-row reveal"><span class="number">04</span><div><h3>National Institute for Transport &amp; Siemens</h3><small>02/2026 · Railway rolling stock and high-speed rail technologies.</small></div></div>
-      <div class="work-row reveal"><span class="number">05</span><div><h3>National Institute for Transport</h3><small>02/2026 · Appraisal guidelines and evaluation methods for railway projects.</small></div></div>
-      <div class="work-row reveal"><span class="number">06</span><div><h3>Arab Contractors Company</h3><small>05/2025 — 06/2025 · Construction and management, transportation systems, propulsion and engines.</small></div></div>
-      <div class="work-row reveal"><span class="number">07</span><div><h3>Akhbar El Yom Canadian Academy</h3><small>10/2023 — 12/2023 · Industrial workshop fundamentals, engineering tools and manufacturing processes.</small></div></div>
-      <div class="work-row reveal"><span class="number">08</span><div><h3>ERMAS</h3><small>07/2023 · Locomotive inspection, maintenance and overhaul at locomotive maintenance workshops.</small></div></div>
+      <a class="work-row reveal" href="#workPreview" data-image="/assets/projects/Fire-Alarm-System.avif"><span class="number">01</span><div><h3 data-i18n="work.w1t">Fire Alarm System</h3><small data-i18n="work.w1d">ELECTRICAL SYSTEMS</small></div><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="work-row reveal" href="#workPreview" data-image="/assets/projects/Project1-switcher-locomotive.avif"><span class="number">02</span><div><h3 data-i18n="work.w2t">Switcher Locomotive</h3><small data-i18n="work.w2d">RAILWAY ENGINEERING</small></div><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="work-row reveal" href="#workPreview" data-image="/assets/projects/Smart-Solar-Car.avif"><span class="number">03</span><div><h3 data-i18n="work.w3t">Smart Solar Car</h3><small data-i18n="work.w3d">RENEWABLE ENERGY</small></div><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="work-row reveal" href="#workPreview" data-image="/assets/projects/project2-penumatic-brake-system.avif"><span class="number">04</span><div><h3 data-i18n="work.w4t">Pneumatic Brake System</h3><small data-i18n="work.w4d">RAILWAY SYSTEMS</small></div><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
     </div>
+    <div class="work-preview" id="workPreview">
+      <div class="preview-placeholder" data-i18n-html="work.placeholder">SELECT<br>PROJECT</div>
+      <img id="previewImage" alt="Selected project preview" width="1200" height="573" decoding="async">
+      <a id="previewLink" class="preview-link" href="#" target="_blank" rel="noopener noreferrer" hidden><span data-i18n="work.open">OPEN PROJECT</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+  </div>
+  <div class="work-float" id="workFloat" aria-hidden="true"><img id="workFloatImg" alt=""></div>
+</section>
+
+<section id="work" class="experience section light-section">
+  <div class="section-head reveal"><span class="section-index">07 / 09</span><span class="section-kicker" data-i18n="train.kicker">TRAINING &amp; INTERNSHIPS</span></div>
+  <h2 class="display-title reveal" data-i18n="train.title">TRAINING</h2>
+  <div class="journey-list experience-list timeline">
+    <div class="timeline-line" aria-hidden="true"><i id="timelineProgress"></i></div>
+    <article class="reveal"><span>07/2026</span><div><h3 data-i18n="train.t1t">Alstom &amp; Egyptian National Institute of Transport</h3><p data-i18n="train.t1d">Modern railway systems, signaling, ATS fundamentals and driverless monorail.</p></div></article>
+    <article class="reveal"><span data-i18n="train.t2d0">50-HOUR PROGRAM</span><div><h3 data-i18n="train.t2t">RATP Dev Mobility Cairo</h3><p data-i18n="train.t2d">Track fundamentals · Theoretical and practical training in track fundamentals and maintenance.</p></div></article>
+    <article class="reveal"><span>05/2026</span><div><h3 data-i18n="train.t3t">Egyptian Company for Metro</h3><p data-i18n="train.t3d">Cairo Metro Line 2 field training in rolling stock overhauls, maintenance and simulation workflows.</p></div></article>
+    <article class="reveal"><span>02/2026</span><div><h3 data-i18n="train.t4t">National Institute for Transport &amp; Siemens</h3><p data-i18n="train.t4d">Railway rolling stock and high-speed rail technologies.</p></div></article>
+    <article class="reveal"><span>02/2026</span><div><h3 data-i18n="train.t5t">National Institute for Transport</h3><p data-i18n="train.t5d">Appraisal guidelines and evaluation methods for railway projects.</p></div></article>
+    <article class="reveal"><span>05/2025 — 06/2025</span><div><h3 data-i18n="train.t6t">Arab Contractors Company</h3><p data-i18n="train.t6d">Construction and management, transportation systems, propulsion and engines.</p></div></article>
+    <article class="reveal"><span>10/2023 — 12/2023</span><div><h3 data-i18n="train.t7t">Akhbar El Yom Canadian Academy</h3><p data-i18n="train.t7d">Industrial workshop fundamentals and engineering tools.</p></div></article>
+    <article class="reveal"><span>07/2023</span><div><h3 data-i18n="train.t8t">ERMAS</h3><p data-i18n="train.t8d">Locomotive inspection, maintenance and overhaul at locomotive maintenance workshops.</p></div></article>
   </div>
 </section>
 
 <section id="journey" class="journey section dark-section">
-  <div class="section-head reveal"><span class="section-index">08 / 09</span><span class="section-kicker">EDUCATION</span></div>
-  <h2 class="display-title reveal">EDUCATION</h2>
-  <div class="journey-list education-list">
-    <article class="reveal"><span>10/2023 — PRESENT</span><div><h3>Railway Engineering Technology</h3><p>Third Year · Faculty of Industry and Energy, 6th of October Technological University, Egypt.</p></div></article>
-    <article class="reveal"><span>10/2021 — 10/2023</span><div><h3>Diploma of Above Intermediate Studies</h3><p>Workers University (University of Labor), Egypt · Graduated with Excellent grade.</p></div></article>
+  <div class="section-head reveal"><span class="section-index">08 / 09</span><span class="section-kicker" data-i18n="edu.kicker">EDUCATION</span></div>
+  <h2 class="display-title reveal" data-i18n="edu.title">EDUCATION</h2>
+  <div class="journey-list">
+    <article class="reveal"><span data-i18n="edu.e1d0">10/2023 — PRESENT</span><div><h3 data-i18n="edu.e1t">Railway Engineering Technology</h3><p data-i18n="edu.e1d">Fourth Year · Faculty of Industry and Energy, 6th of October Technological University, Egypt.</p></div></article>
+    <article class="reveal"><span>10/2021 — 10/2023</span><div><h3 data-i18n="edu.e2t">Diploma of Above Intermediate Studies</h3><p data-i18n="edu.e2d">Workers University (University of Labor), Egypt · Graduated with Excellent grade.</p></div></article>
   </div>
 </section>
 
+<section id="statement" class="statement section dark-section">
+  <div class="statement-inner">
+    <span class="statement-mark" aria-hidden="true">&ldquo;</span>
+    <p class="statement-quote" id="statementQuote">I am seeking an internship to gain practical experience in railway systems, with a particular interest in electrical and mechanical engineering.</p>
+  </div>
+</section>
+
+<div class="marquee marquee-dark" aria-hidden="true" dir="ltr"><div class="marquee-track marquee-track-stars" data-i18n-html="marquee2">TEAMWORK ✦ PROBLEM SOLVING ✦ FAST LEARNING ✦ COMMUNICATION ✦ TEAMWORK ✦ PROBLEM SOLVING ✦ FAST LEARNING ✦ COMMUNICATION ✦ </div></div>
+
 <section id="contact" class="contact section">
-  <div class="section-head reveal"><span class="section-index">09 / 09</span><span class="section-kicker">CONTACT</span></div>
-  <h2 class="display-title reveal">CONTACT</h2>
-  <p class="contact-lead reveal">SONDOS ALSAYED MAHMOUD<br><span>CAIRO, EGYPT</span></p>
+  <div class="contact-orbit" aria-hidden="true"></div>
+  <div class="section-head reveal"><span class="section-index" data-i18n="contact.kicker1">LET'S CONNECT</span><span class="section-kicker" data-i18n="contact.kicker2">CONTACT</span></div>
+  <h2 class="display-title reveal" data-i18n="contact.title">CONTACT</h2>
+  <p class="contact-lead reveal"><span data-i18n="contact.name">SONDOS ALSAYED MAHMOUD</span><br><span data-i18n="contact.city">CAIRO, EGYPT</span></p>
   <div class="contact-grid">
-    <a class="contact-item reveal" href="mailto:sondos02sayed@gmail.com"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="14" rx="1" stroke="currentColor" stroke-width="1.5"></rect><path d="M3.5 5l8.5 6.5L20.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="contact-copy"><strong>EMAIL</strong><small>sondos02sayed@gmail.com</small></span></a>
-    <a class="contact-item reveal" href="tel:+201558268244"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7.2 3.5h2.6l1.3 4-2 1.5a14.5 14.5 0 0 0 5.9 5.9l1.5-2 4 1.3v2.6c0 1.1-.9 2-2 2C11.3 18.8 5.2 12.7 5.2 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="contact-copy"><strong>PHONE</strong><small>+20 155 826 8244</small></span></a>
-    <a class="contact-item reveal" href="https://linkedin.com/in/sondos-al-sayed-567a72341" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.2 8.2H2.4V21h2.8V8.2ZM3.8 2.1a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM21.6 13.7c0-3.9-2.1-5.8-4.9-5.8-2.3 0-3.3 1.3-3.9 2.1V8.2H10V21h2.8v-6.3c0-1.7.3-3.4 2.5-3.4s2.3 2 2.3 3.5V21h2.8l1.2-7.3Z"></path></svg></span><span class="contact-copy"><strong>LINKEDIN</strong><small>VIEW PROFILE <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></small></span></a>
-    <div class="contact-item contact-location reveal"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M19 10c0 4.5-7 10-7 10S5 14.5 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="contact-copy"><strong>LOCATION</strong><small>CAIRO, EGYPT</small></span></div>
+    <a class="contact-item reveal" href="mailto:sondos02sayed@gmail.com"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="14" rx="1" stroke="currentColor" stroke-width="1.5"></rect><path d="M3.5 5l8.5 6.5L20.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="contact-copy"><strong data-i18n="contact.email">EMAIL</strong><small dir="ltr">sondos02sayed@gmail.com</small></span></a>
+    <a class="contact-item reveal" href="tel:+201558268244"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7.2 3.5h2.6l1.3 4-2 1.5a14.5 14.5 0 0 0 5.9 5.9l1.5-2 4 1.3v2.6c0 1.1-.9 2-2 2C11.3 18.8 5.2 12.7 5.2 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="contact-copy"><strong data-i18n="contact.phone">PHONE</strong><small dir="ltr">+20 155 826 8244</small></span></a>
+    <a class="contact-item reveal" href="https://linkedin.com/in/sondos-al-sayed-567a72341" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.2 8.2H2.4V21h2.8V8.2ZM3.8 2.1a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM21.6 13.7c0-3.9-2.1-5.8-4.9-5.8-2.3 0-3.3 1.3-3.9 2.1V8.2H10V21h2.8v-6.3c0-1.7.3-3.4 2.5-3.4s2.3 2 2.3 3.5V21h2.8l1.2-7.3Z"></path></svg></span><span class="contact-copy"><strong>LINKEDIN</strong><small data-i18n="contact.linkedin">VIEW PROFILE <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></small></span></a>
+    <div class="contact-item contact-location reveal"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M19 10c0 4.5-7 10-7 10S5 14.5 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="contact-copy"><strong data-i18n="contact.location">LOCATION</strong><small data-i18n="contact.locationv">CAIRO, EGYPT</small></span></div>
+  </div>
+  <div class="cv-cta reveal">
+    <a class="cv-btn" id="cvBtn" href="/assets/cv/sondos-alsayed-mahmoud-cv-en.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M4.5 19.5h15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <span data-i18n="cv.download">DOWNLOAD CV</span>
+    </a>
+    <small data-i18n="cv.note">PDF · EN &amp; AR</small>
   </div>
 </section>
 
@@ -240,26 +236,26 @@
   <section class="footer-request" aria-labelledby="requestTitle">
     <div class="footer-request-head">
       <div>
-        <p class="request-eyebrow">HAVE A QUESTION OR INTERNSHIP OPPORTUNITY?</p>
-        <h2 id="requestTitle">SEND A MESSAGE</h2>
+        <p class="request-eyebrow" data-i18n="form.eyebrow">HAVE A QUESTION OR INTERNSHIP OPPORTUNITY?</p>
+        <h2 id="requestTitle" data-i18n="form.title">SEND A MESSAGE</h2>
       </div>
-      <p class="request-intro">Share a few details and I will get back to you as soon as possible.</p>
+      <p class="request-intro" data-i18n="form.intro">Share a few details and I will get back to you as soon as possible.</p>
     </div>
     <form class="request-form" id="requestForm">
       <div class="request-field">
-        <label for="requestName">NAME</label>
+        <label for="requestName" data-i18n="form.name">NAME</label>
         <input id="requestName" name="name" type="text" autocomplete="name" maxlength="100" required>
       </div>
       <div class="request-field">
-        <label for="requestPhone">PHONE</label>
-        <input id="requestPhone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+20 1..." required>
+        <label for="requestPhone" data-i18n="form.phone">PHONE</label>
+        <input id="requestPhone" name="phone" type="tel" dir="ltr" autocomplete="tel" maxlength="30" data-i18n-ph="form.phoneph" placeholder="+20 1..." required>
       </div>
       <div class="request-field">
-        <label for="requestEmail">EMAIL</label>
-        <input id="requestEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+        <label for="requestEmail" data-i18n="form.email">EMAIL</label>
+        <input id="requestEmail" name="email" type="email" autocomplete="email" maxlength="254" required dir="ltr">
       </div>
       <div class="request-field request-field-message">
-        <label for="requestMessage">YOUR MESSAGE</label>
+        <label for="requestMessage" data-i18n="form.message">YOUR MESSAGE</label>
         <textarea id="requestMessage" name="message" rows="4" maxlength="3000" required></textarea>
       </div>
       <div class="request-honeypot" aria-hidden="true">
@@ -267,18 +263,20 @@
         <input id="requestWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
       </div>
       <div class="request-form-actions">
-        <button class="request-submit" type="submit">SEND REQUEST</button>
+        <button class="request-submit" type="submit"><span data-i18n="form.submit">SEND MESSAGE</span> <span aria-hidden="true">↗</span></button>
         <p class="request-status" id="requestStatus" role="status" aria-live="polite"></p>
       </div>
     </form>
   </section>
   <div class="footer-bottom">
-    <a class="footer-brand" href="#home"><img class="brand-logo" src="/assets/logo.avif" alt=""><span>Sondos Alsayed Mahmoud</span></a>
-    <span class="footer-role">RAILWAY ENGINEERING TECHNOLOGY STUDENT</span>
+    <a class="footer-brand" href="#home"><img class="brand-logo" src="/assets/logo.avif" alt=""><span data-i18n="footer.name">Sondos Alsayed Mahmoud</span></a>
+    <span class="footer-role" data-i18n="footer.role">RAILWAY ENGINEERING TECHNOLOGY STUDENT</span>
     <span class="footer-year">© <b id="currentYear">2026</b></span>
   </div>
 </footer>
 </main>
-<script src="/script.js?v=35"></script>
+<div class="page-wipe" id="pageWipe" aria-hidden="true"><i class="pw-a"></i><i class="pw-b"></i></div>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+<script src="/script.js?v=1"></script>
 </body>
 </html>

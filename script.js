@@ -152,7 +152,7 @@ function applyLang(next){
   const lt=$('#langToggle');
   if(lt){const lbl=lt.querySelector('.lt-label');if(lbl)lbl.textContent=ar?'EN':'عربي';}
   const cvBtn=$('#cvBtn');
-  if(cvBtn) cvBtn.setAttribute('href',ar?'/assets/cv/sondos-alsayed-mahmoud-cv-ar.pdf':'/assets/cv/sondos-alsayed-mahmoud-cv-en.pdf');
+  if(cvBtn) cvBtn.setAttribute('href',ar?'/assets/cv/sondos-alsayed-mahmoud-cv-ar-corrected-47d47d4c.pdf':'/assets/cv/sondos-alsayed-mahmoud-cv-en-corrected-79280c67.pdf');
   document.body.classList.toggle('ar',ar);
   splitTitles();
   if(window.__statement)window.__statement.rebuild();

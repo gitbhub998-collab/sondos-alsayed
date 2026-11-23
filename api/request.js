@@ -98,11 +98,11 @@ module.exports = async (req, res) => {
   const safePhone = escapeHtml(phone);
   const safeEmail = escapeHtml(email);
   const safeMessage = escapeHtml(message).replace(/\r?\n/g, '<br>');
-  const safeNameUpper = escapeHtml(name.toUpperCase());
   const safePhoneLink = encodeURIComponent(phone.replace(/[^\d+]/g, ''));
   const receivedDate = new Intl.DateTimeFormat('en', {
     dateStyle: 'medium',
-    timeStyle: 'short'
+    timeStyle: 'short',
+    timeZone: 'Africa/Cairo'
   }).format(new Date());
   const html = `<!doctype html>
 <html lang="en">
@@ -112,96 +112,58 @@ module.exports = async (req, res) => {
   <meta name="color-scheme" content="dark">
   <meta name="supported-color-schemes" content="dark">
   <title>New message from ${safeName}</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Cairo:wght@400;600;700&display=swap');
+    @media only screen and (max-width: 480px) {
+      .outer { padding: 16px 10px !important; }
+      .inset { padding-left: 22px !important; padding-right: 22px !important; }
+      .contact-cell { display: block !important; width: auto !important; padding: 0 !important; }
+      .phone-cell { padding-top: 12px !important; }
+      .sender-name { font-size: 26px !important; }
+    }
+  </style>
 </head>
-<body style="margin:0;padding:0;background-color:#100f0b;font-family:Arial,Helvetica,sans-serif;color:#f5f1e6;-webkit-text-size-adjust:100%;">
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">New portfolio request from ${safeName}. Contact details and message inside.</div>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;background-color:#100f0b;">
-    <tr>
-      <td align="center" style="padding:28px 12px;">
-        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="width:100%;max-width:600px;border-collapse:separate;border-spacing:0;background-color:#17140e;border:1px solid #51452d;border-radius:14px;overflow:hidden;">
-          <tr>
-            <td style="padding:22px 24px;background-color:#000000;border-bottom:2px solid #ffc857;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;table-layout:fixed;">
-                <tr>
-                  <td width="52" valign="middle" style="width:52px;">
-                    <table role="presentation" width="40" height="40" cellspacing="0" cellpadding="0" border="0" style="width:40px;height:40px;border:1px solid #51452d;border-radius:10px;">
-                      <tr><td align="center" valign="middle" style="color:#ffc857;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;letter-spacing:1px;">SA</td></tr>
-                    </table>
-                  </td>
-                  <td valign="middle" style="padding-left:12px;word-break:break-word;">
-                    <div style="color:#f5f1e6;font-size:13px;line-height:1.4;font-weight:bold;letter-spacing:.8px;">SONDOS ALSAYED MAHMOUD</div>
-                    <div style="padding-top:4px;color:#c1baa8;font-size:10px;line-height:1.5;letter-spacing:.5px;">RAILWAY ENGINEERING TECHNOLOGY STUDENT</div>
-                  </td>
-                </tr>
-              </table>
-              <div style="padding:12px 0 0 52px;color:#ffc857;font-size:9px;line-height:1.4;font-weight:bold;letter-spacing:1.5px;">PORTFOLIO CONTACT</div>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:28px 24px 8px;">
-              <div style="color:#ffc857;font-size:10px;line-height:1.5;font-weight:bold;letter-spacing:1.7px;">NEW REQUEST RECEIVED</div>
-              <h1 style="margin:10px 0 0;color:#f5f1e6;font-family:Arial,Helvetica,sans-serif;font-size:27px;line-height:1.25;font-weight:600;letter-spacing:-.4px;">A new message has arrived.</h1>
-              <p style="margin:12px 0 0;color:#c1baa8;font-size:14px;line-height:1.7;"><strong style="color:#f5f1e6;">${safeName}</strong> contacted you through your portfolio. Their contact details and message are below.</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px 24px 8px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;border:1px solid #51452d;border-radius:10px;background-color:#100f0b;">
-                <tr>
-                  <td style="padding:14px 16px;border-bottom:1px solid #51452d;color:#ffc857;font-size:10px;line-height:1.4;font-weight:bold;letter-spacing:1.4px;">SENDER DETAILS</td>
-                </tr>
-                <tr>
-                  <td style="padding:14px 16px 4px;color:#c1baa8;font-size:10px;line-height:1.4;letter-spacing:1px;">NAME</td>
-                </tr>
-                <tr>
-                  <td style="padding:0 16px 13px;color:#f5f1e6;font-size:14px;line-height:1.6;font-weight:bold;word-break:break-word;">${safeName}</td>
-                </tr>
-                <tr>
-                  <td style="padding:0 16px 4px;color:#c1baa8;font-size:10px;line-height:1.4;letter-spacing:1px;">EMAIL</td>
-                </tr>
-                <tr>
-                  <td style="padding:0 16px 13px;color:#f5f1e6;font-size:14px;line-height:1.6;word-break:break-all;"><a href="mailto:${safeEmail}" style="color:#ffc857;text-decoration:underline;">${safeEmail}</a></td>
-                </tr>
-                <tr>
-                  <td style="padding:0 16px 4px;color:#c1baa8;font-size:10px;line-height:1.4;letter-spacing:1px;">PHONE</td>
-                </tr>
-                <tr>
-                  <td style="padding:0 16px 15px;color:#f5f1e6;font-size:14px;line-height:1.6;word-break:break-word;"><a href="tel:${safePhoneLink}" style="color:#ffc857;text-decoration:underline;">${safePhone}</a></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px 24px 24px;">
-              <div style="padding:0 0 10px;color:#ffc857;font-size:10px;line-height:1.5;font-weight:bold;letter-spacing:1.3px;">MESSAGE</div>
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-left:3px solid #ffc857;background-color:#100f0b;">
-                <tr><td style="padding:16px;color:#f5f1e6;font-size:14px;line-height:1.8;word-break:break-word;">${safeMessage}</td></tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td align="left" style="padding:0 24px 28px;">
-              <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:separate;">
-                <tr>
-                  <td align="center" bgcolor="#ffc857" style="border-radius:10px;">
-                    <a href="mailto:${safeEmail}" style="display:inline-block;padding:14px 20px;color:#100f0b;font-size:11px;line-height:1.4;font-weight:bold;letter-spacing:.7px;text-decoration:none;">REPLY TO SENDER &nbsp; &#8599;</a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:16px 24px;border-top:1px solid #51452d;background-color:#000000;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
-                <tr>
-                  <td style="color:#c1baa8;font-size:10px;line-height:1.7;">Sent from the contact form on Sondos's portfolio.<br>Received ${receivedDate}</td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+<body style="margin:0;padding:0;background-color:#130826;font-family:'Inter Tight','Cairo','Arial Narrow',Arial,sans-serif;color:#f3effa;-webkit-text-size-adjust:100%;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;mso-hide:all;">${safeName} sent you a message through your portfolio.</div>
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;background-color:#130826;">
+    <tr><td class="outer" align="center" style="padding:32px 16px;">
+      <table role="presentation" width="560" cellspacing="0" cellpadding="0" border="0" style="width:100%;max-width:560px;table-layout:fixed;border-collapse:separate;border-spacing:0;background-color:#221040;background-image:linear-gradient(145deg,#33195f 0%,#221040 58%,#130826 100%);border:1px solid #523873;border-radius:3px;overflow:hidden;">
+        <tr><td style="height:4px;line-height:4px;font-size:1px;background-color:#ff6b4a;">&nbsp;</td></tr>
+        <tr><td class="inset" style="padding:22px 30px 20px;border-bottom:1px solid #523873;">
+          <div style="font-family:'IBM Plex Mono',Consolas,'Courier New',monospace;font-size:13px;line-height:1.5;font-weight:500;letter-spacing:1.2px;color:#f3effa;">SONDOS ALSAYED MAHMOUD<span style="color:#ff6b4a;">.</span></div>
+          <div style="margin-top:6px;color:#c8bbda;font-family:'IBM Plex Mono',Consolas,'Courier New',monospace;font-size:10px;line-height:1.4;letter-spacing:1.5px;">PORTFOLIO / CONTACT</div>
+        </td></tr>
+        <tr><td class="inset" style="padding:24px 30px 18px;">
+          <div style="font-family:'IBM Plex Mono',Consolas,'Courier New',monospace;font-size:11px;line-height:1.5;font-weight:500;letter-spacing:1.7px;color:#ff6b4a;">NEW MESSAGE</div>
+          <h1 class="sender-name" dir="auto" style="margin:8px 0 0;font-family:'Bricolage Grotesque','Cairo','Trebuchet MS',Arial,sans-serif;font-size:34px;line-height:1.15;font-weight:600;letter-spacing:-1.2px;color:#f3effa;overflow-wrap:anywhere;word-break:break-word;">${safeName}</h1>
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;table-layout:fixed;margin-top:18px;">
+            <tr>
+              <td class="contact-cell" width="62%" valign="top" style="width:62%;padding-right:18px;">
+                <div style="font-family:'IBM Plex Mono',Consolas,'Courier New',monospace;font-size:10px;line-height:1.4;letter-spacing:1px;color:#c8bbda;">EMAIL</div>
+                <a href="mailto:${encodeURIComponent(email)}" style="display:inline-block;margin-top:5px;color:#f3effa;font-size:14px;line-height:1.5;text-decoration:underline;text-decoration-color:#9e83bd;overflow-wrap:anywhere;word-break:break-all;">${safeEmail}</a>
+              </td>
+              <td class="contact-cell phone-cell" width="38%" valign="top" style="width:38%;">
+                <div style="font-family:'IBM Plex Mono',Consolas,'Courier New',monospace;font-size:10px;line-height:1.4;letter-spacing:1px;color:#c8bbda;">PHONE</div>
+                <a href="tel:${safePhoneLink}" dir="ltr" style="display:inline-block;margin-top:5px;color:#f3effa;font-size:14px;line-height:1.5;text-decoration:none;overflow-wrap:anywhere;word-break:break-word;">${safePhone}</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+        <tr><td class="inset" style="padding:0 30px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;table-layout:fixed;border-collapse:separate;background-color:#170a33;border:1px solid #523873;border-radius:2px;">
+            <tr><td dir="auto" style="padding:18px 20px;color:#f3effa;font-size:16px;line-height:1.65;overflow-wrap:anywhere;word-break:break-word;">${safeMessage}</td></tr>
+          </table>
+        </td></tr>
+        <tr><td class="inset" style="padding:20px 30px 24px;">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:separate;">
+            <tr><td align="center" bgcolor="#ff6b4a" style="border:1px solid #ff6b4a;border-radius:24px;mso-padding-alt:13px 22px;">
+              <a href="mailto:${encodeURIComponent(email)}" style="display:inline-block;padding:13px 22px;color:#170a33;font-size:14px;line-height:1.2;font-weight:700;text-decoration:none;">Reply to sender &nbsp; &#8599;</a>
+            </td></tr>
+          </table>
+        </td></tr>
+        <tr><td class="inset" style="padding:14px 30px;border-top:1px solid #523873;color:#c8bbda;font-size:11px;line-height:1.6;">Via Sondos's portfolio &nbsp;&middot;&nbsp; ${receivedDate} (Cairo)</td></tr>
+      </table>
+    </td></tr>
   </table>
 </body>
 </html>`;

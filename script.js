@@ -24,7 +24,7 @@ en:{
  'about.p2':'I am seeking an internship to gain practical experience in railway systems, with a particular interest in electrical and mechanical engineering. My training includes railway track fundamentals, metro maintenance, rolling stock, high-speed rail and modern signaling.',
  'about.p3':'I also bring long-term Microsoft Excel support experience and a strong foundation in teamwork, problem solving and communication.',
  'about.f1k':'EDUCATION','about.f1v':'RAILWAY ENGINEERING TECHNOLOGY','about.f2k':'LANGUAGES','about.f2v':'ARABIC (NATIVE) / ENGLISH (INTERMEDIATE)','about.f3k':'LOCATION','about.f3v':'CAIRO, EGYPT',
- 'matrix.title':'TECHNICAL SKILLS','matrix.m1':'Microsoft Excel','matrix.m2':'Railway Systems','matrix.m3':'Track & Maintenance','matrix.m4':'Signaling & Modern Rail','matrix.m5':'Rolling Stock','matrix.m6':'Electrical Systems',
+ 'matrix.title':'TECHNICAL SKILLS','matrix.m1':'Microsoft PowerPoint & Excel','matrix.m2':'Railway Systems','matrix.m3':'Track & Maintenance','matrix.m4':'Signaling & Modern Rail','matrix.m5':'Rolling Stock','matrix.m6':'Electrical Systems',
  'exp.kicker':'EXPERIENCE & COURSES','exp.title':'EXPERIENCE',
  'exp.e1d0':'APPROX. 3 YEARS','exp.e1t':'Microsoft Excel Support','exp.e1d':'Physics education content for Mr. Mahmoud Magdy · Organizing, formatting and managing educational content and data.',
  
@@ -89,7 +89,7 @@ ar:{
  'about.p2':'أسعى للحصول على تدريب لاكتساب خبرة عملية في أنظمة السكك الحديدية، مع اهتمام خاص بالهندسة الكهربائية والميكانيكية. يشمل تدريبي أساسيات قضبان السكك الحديدية وصيانة المترو والوحدات المتحركة والقطارات فائقة السرعة والإشارات الحديثة.',
  'about.p3':'كما أمتلك خبرة ممتدة في دعم Microsoft Excel وأساسًا قويًا في العمل الجماعي وحل المشكلات والتواصل.',
  'about.f1k':'التعليم','about.f1v':'هندسة تكنولوجيا السكك الحديدية','about.f2k':'اللغات','about.f2v':'العربية (لغة أم) / الإنجليزية (متوسطة)','about.f3k':'الموقع','about.f3v':'القاهرة، مصر',
- 'matrix.title':'المهارات التقنية','matrix.m1':'مايكروسوفت إكسل','matrix.m2':'أنظمة السكك الحديدية','matrix.m3':'القضبان والصيانة','matrix.m4':'الإشارات والسكك الحديثة','matrix.m5':'الوحدات المتحركة','matrix.m6':'الأنظمة الكهربائية',
+ 'matrix.title':'المهارات التقنية','matrix.m1':'مايكروسوفت باوربوينت وإكسل','matrix.m2':'أنظمة السكك الحديدية','matrix.m3':'القضبان والصيانة','matrix.m4':'الإشارات والسكك الحديثة','matrix.m5':'الوحدات المتحركة','matrix.m6':'الأنظمة الكهربائية',
  'exp.kicker':'الخبرة والدورات','exp.title':'الخبرة',
  'exp.e1d0':'نحو 3 سنوات','exp.e1t':'دعم Microsoft Excel','exp.e1d':'محتوى تعليمي لمادة الفيزياء للأستاذ محمود مجدي · تنظيم وتنسيق وإدارة المحتوى التعليمي والبيانات.',
  
